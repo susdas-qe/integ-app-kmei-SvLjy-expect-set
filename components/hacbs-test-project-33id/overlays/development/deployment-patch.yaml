@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-33id
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/integration1-ctih-tenant/integ-app-kmei/hacbs-test-project-33id@sha256:28f90c3e36f6e3e31d1ff5fe1bbdc036c9915256c57180c2c6033793cfa5d7b2
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
